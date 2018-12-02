@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>CarHiCar</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -23,15 +23,239 @@ and open the template in the editor.
     a:hover, a:active {
     background-color:red;
 }
+a.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+a.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+}
+
+a.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
         </style>
     </head>
-    <body>
-        <font size=7 face="Comic Sans MS"><b><u>CarHiCar</u></b></font><br><br>
-        <img src="drivingroute3000x1687_img_w1280.jpg" width="1500" height="400">
+    <body background="1.jpg">
+        <font size=5 face="Comic Sans MS" color="white"><b><u>CarHiCar</u></b></font><br><br><hr><br>
+    <center>
+        <font size=5 face="Comic Sans MS" color="white">
+        <b><u>Login to offer a ride</u></b>
+        </font>
+    </center>
+        <div class="row">
+  <div class="column left">
+      <pre><font face="Adobe Heiti Std" color="white" size=5><br>
+                                                                   <a href="login.html" class="button button1">LOGIN</a></font> <br><br>
+        <font face="Adobe Heiti Std" color="white" size=5>
+                                                                 <a href="signup.html" class="button button1">SIGN UP</a></font>
+</pre>
+  </div>
+    <br><br>
+    
+    <div class ="column right">
         
-<center>
-<a href="login.html">LOGIN</a> |
-<a href="signup.html" >SIGN UP</a>
-</center>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+<img src="carpool1.jpg" style="width:100%">
+                </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+<img src="drivingroute3000x1687_img_w1280.jpg" style="width:100%">
+                </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+<img src="1_oksd5O2mi0033JQ9WQA-Zg.jpeg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+    </div>
+        </div>
+        <br><br><br><br><br><br><br>
+<footer>
+        <center>
+            <font face="Adobe Heiti Std" color="white" size="2"><br>Forget going into the city to get out of town. We connect people together, making it possible to travel literally anywhere, directly.<br>
+            </font>
+        </center>
+    </footer>    
     </body>
 </html>

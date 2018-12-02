@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>SignUp</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -23,7 +23,7 @@ body, html {
     /* The image used */
     background-image: url("transportes-privados-chofer-1024x559.jpg");
 
-    min-height: 650px;
+    min-height: 500px;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -44,7 +44,7 @@ body, html {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -52,7 +52,7 @@ input[type=text], input[type=password], input[type=email] {
     background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -88,27 +88,21 @@ a:link, a:visited {
     </head>
     <body background="1.jpg">
         <font size=5 face="Comic Sans MS" color="white"><b><u>CarHiCar</u></b></font><br><br><hr><br>
-        
+       
+
+
         <div class="bg-img">
-            <form action="signup" method="get" class="container">
-                <h1><font size=5 face="Comic Sans MS" >Sign Up</font></h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-    
-    <label for="username"><b>Username</b></label>
-    <input type="text" placeholder="Enter username" name="username" required>
+            <form action="login1" method="get" class="container">
+      <br><br>
+      <h1><font size=5 face="Comic Sans MS" >Login</font></h1>
 
     <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" name="email" required>
-    
-    <label for="mobNo"><b>Mobile No.</b></label>
-    <input type="text" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter mobile number" name="mobNo" required>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-    
 
-    <button type="submit" class="btn">Signup</button>
+    <button type="submit" class="btn">Login</button>
   </form>
 </div>
     </body>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Find a Ride</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    input[type=text]{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=date]{
+    width: 20%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=date]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+a.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+a.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+}
+
+a.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+        </style>
+    </head>
+    <body background="1.jpg" link="white" alink="green" vlink="salmon">
+        <font size="5" face="Comic Sans MS" color="white"><b><u>CarHiCar</u></b></font>
+        <nav style="text-align:right;">
+         |        <a href="firstPage.html"><font size=4 face="Comic Sans MS">    Log out</font></a>
+</nav><hr>
+        <br>
+        <pre>
+<font face="Adobe Heiti Std" size=5 color="white">
+                                                                                       Find a ride for your next journey</font>
+        </pre>
+        <form method="get" action="findRide">
+    <center>
+        
+        <input type="text" placeholder="Leaving from" name="dep">
+        <input type="text" placeholder="Going to" name="arr"><br>
+        
+        </center>
+    <pre>
+        <font face="Century751 SeBd BT" size=3 color="white">                                                                Date:</font><br>
+                                        <input type="date" name="depd">
+    
+                                       <button type="submit">Submit</button>
+    </pre>
+            
+        </form>
+    </body>
+</html>

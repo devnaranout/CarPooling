@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+}
+
+button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+        </style>
+    </head>
+        <body background="1.jpg" link="white" alink="green" vlink="salmon">
+        <font size=5 face="Comic Sans MS" color="white"><b><u>CarHiCar</u></b></font>
+        <nav style="text-align:right;">
+         |        <a href="firstPage.html"><font size=4 face="Comic Sans MS">    Log out</font></a>
+</nav><hr>
+        <br>
+        <font size=5 face="Comic Sans MS" color="white">
+        Your details that will be further provided to the customers finding rides</font> 
+        <br><br>
+        <form action="offerRide2.java">
+            <button type="submit" class="button button1">Show details</button><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Name:</font><br>
+        <input type="text" size="100" name="name" value="" readonly><br><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Car No. :</font><br>
+        <input type="text" size="100" name="car" readonly><br><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Pick-up:</font><br>
+        <input type="text" size="100" name="dep" readonly><br><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Drop-off:</font><br>
+        <input type="text" size="100" name="arr" readonly><br><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Stopovers:</font><br>
+        <input type="text" size="100" name="stop" readonly><br><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Date:</font><br>                
+        <input type="date" name="depd" readonly><br><br><br>
+        <font face="Century751 SeBd BT" size=3 color="white"> Time:</font><br>  
+        <input type="time" name="time" readonly>
+        </form>
+    </body>
+</html>

@@ -10,19 +10,18 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class login extends HttpServlet {
+public class login1 extends HttpServlet {
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out=response.getWriter();
         String email=request.getParameter("email");
         String passW=request.getParameter("psw");
-        HttpSession sn=null;
         
        
         LoginDAO l = new LoginDAO();
@@ -30,15 +29,15 @@ public class login extends HttpServlet {
            String result = l.checkInfo(email, passW);
            if(result.equals("you are logged in"))
                
-                response.sendRedirect("offerRide.html");
+           response.sendRedirect("findRide.html");
            else
            {
-               response.sendRedirect("login.html");
+               response.sendRedirect("login1.html");
            }
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(login1.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(login1.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

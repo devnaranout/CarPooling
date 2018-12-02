@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Offer A Ride</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+table,th,td
+{
+border:3px solid black;
+}
+a.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+a.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+}
+
+a.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+</style>
+
+    </head>
+    <body background="1.jpg" link="white" alink="green" vlink="salmon">
+        <font size=5 face="Comic Sans MS" color="white"><b><u>CarHiCar</u></b></font>
+        <nav style="text-align:right;">
+         |        <a href="firstPage.html"><font size=4 face="Comic Sans MS">    Log out</font></a>
+</nav><hr>
+        <br>
+        <pre>
+<font face="Adobe Heiti Std" size=5 color="white">
+                                                               Offer a ride on your next long journey</font>
+        </pre>
+        
+    <center><pre>
+        <table width="50%" border=1 style="border-collapse:collapse;">
+            <tr>
+                <th align="left" style="background:white;">
+   <font face="Adobe Heiti Std" size=3>Personal Info && Pick-up and drop-off points<br></font>
+</th>
+</tr>
+<th colspan="2" style="background:lavender;" align="left">
+<form action="offerRide2.jsp">
+  <font face="Century751 SeBd BT" size=3> Name</font><br>
+  <input type="text" size="100" placeholder="name" name="name" required><br><br><br>
+  <font face="Century751 SeBd BT" size=3> Car No.</font><br>
+  <input type="text" size="100" placeholder="Enter yor car number" name="car" required><br><br><br>
+  <font face="Century751 SeBd BT" size=3> Pick-up</font><br>
+  <input type="text" size="100" placeholder="Your departure point (address, ci3ty, station...) " name="dep" required><br><br><br>
+  <font face="Century751 SeBd BT" size=3> Drop-off</font><br>
+  <input type="text" size="100" placeholder="Your arrival point (address, city, station...)" name="arr" required><br><br><br>
+  <font face="Century751 SeBd BT" size=3> Stopovers<br>
+     Now add your stopover points - offering to pick up and drop off co-travellers
+     along the way is a sure way to fill your car.</font>
+  <input type="text" size="100" placeholder="Your arrival point (address, city, station...)" name="stop"><br>
+
+    
+        </table><br>
+        <table width="50%" border=1 style="border-collapse:collapse;">
+            <tr>
+                <th align="left" style="background:white;">
+     <font face="Adobe Heiti Std" size="3">Date</font>
+                </th>
+            </tr>
+            <th colspan="2" style="background:lavender;" align="left">
+  <font face="Century751 SeBd BT" size=3> Date:</font><br>                
+  <input type="date" name="depd" required><br>
+  <font face="Century751 SeBd BT" size=3> Time:</font><br>  
+  <input type="time" name="time" required>
+  <br>
+  <button type="submit">Submit</button>
+            </th>
+</table>
+        
+  </pre>  
+</form>
+    </center>
+    
+    <br><br><br>
+<footer>
+        <center>
+            <font face="Adobe Heiti Std" size="2" color="white"><br>Forget going into the city to get out of town. We connect people together, making it possible to travel literally anywhere, directly.<br>
+            </font>
+        </center>
+    </footer>
+    </body>
+</html>
